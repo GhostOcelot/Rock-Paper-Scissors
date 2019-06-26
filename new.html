@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Test</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Rock Paper Scissors</h1>
-    </header>
+  <header>
+    <h1>Rock Paper Scissors</h1>
+  </header>
 
+  <div>
+    <h1 id="score">Score</h1>
+  </div>
+
+  <div id="box">
+    <span id="player-score">0</span>:<span id="computer-score">0</span>
+    <div class="sidebox" id="left">
+      <p>Player</p>
+    </div>
+    <div class="sidebox" id="right">
+      <p>Computer</p>
+    </div>
+  </div>
+
+  <div>
+    <h1 id="result">Get ready for the unexpected!</h1>
+  </div>
+
+  <div class="game">
+    <div class="icons">
+      <img src="images/rock.svg" id="r" alt="rock">
+    </div>
+    <div class="icons">
+      <img src="images/paper.svg" id="p" alt="paper">
+    </div>
+    <div class="icons">
+      <img src="images/scissors.svg" id="s" alt="scissors">
+    </div>
     <div>
-        <h1 id="score">Score</h1>
+      <p>Let's play!</p>
     </div>
+    <button class="reset" type="reset">Reset</button>
+  </div>
 
-
-    <div id="box">
-        <span id="player-score">0</span>:<span id="computer-score">0</span>
-            <div class="sidebox" id="left"><p>Player</p></div>
-            <div class="sidebox" id="right"><p>Computer</p></div>
-    </div>
-
-    <div>
-        <h1 id="result">Get ready for the unexpected!</h1>
-    </div>
-
-    <div class="game">
-        <div class="icons">
-            <img src="images/rock.svg" id="r" alt="rock">
-        </div>
-        <div class="icons">
-            <img src="images/paper.svg" id="p" alt="paper">
-        </div>
-        <div class="icons" >
-            <img src="images/scissors.svg" id="s" alt="scissors">
-        </div>
-    </div>
-
-    <div>
-        <p>Lets play!</p>
-    </div>
-    <script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>

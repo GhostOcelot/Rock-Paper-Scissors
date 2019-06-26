@@ -1,105 +1,134 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Ubuntu, sans-serif;
+  font-family: Ubuntu, sans-serif;
 }
 
 h1 {
-text-align: center;
-margin: 10px;
+  text-align: center;
+  margin: 10px;
 }
 
 p {
-    text-align: center;
-    margin: 10px;
+  text-align: center;
+  margin: 10px;
 }
 
 header {
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
 }
 
 #score {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 #box {
-    font-size: 30px;
-    border: solid 2px #222;
-    border-radius: 3px;
-    position: relative;
-    width: 200px;
-    text-align: center;
-    margin: 20px auto;
-    padding: 15px 20px;
+  font-size: 30px;
+  border: solid 2px #222;
+  border-radius: 3px;
+  position: relative;
+  width: 200px;
+  text-align: center;
+  margin: 20px auto;
+  padding: 15px 20px;
+  background-color: #fff;
 }
 
 .sidebox {
-    background-color: #222;
-    border: solid 1px #222;
-    color: #fff;
-    font-size: 11px;
-    width: 70px;
-    height: 33px;
-    transition: all 0.5s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #222;
+  border: solid 1px #222;
+  color: #fff;
+  font-size: 11px;
+  width: 70px;
+  transition: all 0.5s ease;
 }
 
 #left {
-    position: absolute;
-    top: 16px;
-    left: -35px;
-}
-#right {
-    position: absolute;
-    top: 16px;
-    right: -35px;;
+  left: -35px;
 }
 
-.sidebox:hover {
-    background-color: #fff;
-    color: #222;
-    border: solid 1px #222;
+#right {
+  right: -35px;
+  ;
 }
+
+/* .sidebox:hover {
+  background-color: #fff;
+  color: #222;
+  border: solid 1px #222;
+} */
 
 .game {
-    text-align: center;
+  position: relative;
+  text-align: center;
 }
 
 .icons {
-    height: 100px;
-    width: 100px;
-    display: inline-block;
-    border: solid 2px #222;
-    border-radius: 50%;
-    margin: 10px;
-    transition: all 0.5s ease;
+  position: relative;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  border: solid 2px #222;
+  border-radius: 50%;
+  margin: 10px;
+  transition: all 0.5s ease;
+  background-color: #fff;
 }
 
 .icons:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .green {
-    border: 1px solid #03ad03;
-    border-radius: 50%;
-    box-shadow: 0 0 5px #00ff23;
+  border: 1px solid #03ad03;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #00ff23;
 }
 
 .red {
-    border: 1px solid #bc3423;
-    border-radius: 50%;
-    box-shadow: 0 0 5px #ed0000;
+  border: 1px solid #bc3423;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #ed0000;
 }
 
 .gray {
-    border: 1px solid #44454c;
-    border-radius: 50%;
-    box-shadow: 0 0 5px #93989d;
+  border: 1px solid #44454c;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #93989d;
+}
+
+.icons img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  box-sizing: content-box;
+}
+
+.reset {
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: Ubuntu, sans-serif;
+  border: 1px solid black;
+  background-color: #fff;
+  padding: 10px 20px;
+}
+
+.blink {
+  box-shadow: 0 0 3px #93989d;
+  border: 1px solid #44454c;
 }
