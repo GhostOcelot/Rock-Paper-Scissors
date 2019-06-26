@@ -76,8 +76,5 @@ function main() {
 main();
 
 let reset = document.querySelector(".reset").addEventListener("click", function () {
-  computerScoreSpan.innerHTML = 0;
-  playerScoreSpan.innerHTML = 0;
-  document.querySelector(".reset").classList.add("blink");
-  setTimeout(() => document.querySelector(".reset").classList.remove("blink"), 300)
+  location.reload();
 })
